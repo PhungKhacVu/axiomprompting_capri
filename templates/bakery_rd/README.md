@@ -13,6 +13,8 @@ Hệ thống này bao gồm một bộ các "Prompt Template" được thiết k
 3.  **`research_analyzer.md`**: Dùng để tóm tắt, phân tích và tìm cảm hứng sáng tạo từ các tài liệu khoa học hoặc kỹ thuật.
 4.  **`ingredient_comparison.md`**: Dùng để thực hiện các phân tích so sánh chi tiết giữa các loại nguyên liệu khác nhau.
 5.  **`tech_doc_generator.md`**: Dùng để tự động hóa việc tạo các tài liệu kỹ thuật như Bảng thông số sản phẩm (Spec Sheet) hoặc Quy trình vận hành tiêu chuẩn (SOP).
+6.  **`ingredient_spec_sheet_generator.md`**: Một công cụ tương tác thông minh để tạo Bảng thông số Kỹ thuật cho nguyên liệu. Nó sẽ chủ động hỏi thêm thông tin nếu dữ liệu ban đầu không đầy đủ.
+7.  **`shelf_life_study_designer.md`**: Dùng để thiết kế một đề cương nghiên cứu hạn sử dụng (shelf-life study) toàn diện và khoa học cho sản phẩm mới.
 
 ## Chế độ Tối ưu hóa (Optimization Modes)
 
