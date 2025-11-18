@@ -15,6 +15,8 @@ Hệ thống này bao gồm một bộ các "Prompt Template" được thiết k
 5.  **`tech_doc_generator.md`**: Dùng để tự động hóa việc tạo các tài liệu kỹ thuật như Bảng thông số sản phẩm (Spec Sheet) hoặc Quy trình vận hành tiêu chuẩn (SOP).
 6.  **`ingredient_spec_sheet_generator.md`**: Một công cụ tương tác thông minh để tạo Bảng thông số Kỹ thuật cho nguyên liệu. Nó sẽ chủ động hỏi thêm thông tin nếu dữ liệu ban đầu không đầy đủ.
 7.  **`shelf_life_study_designer.md`**: Dùng để thiết kế một đề cương nghiên cứu hạn sử dụng (shelf-life study) toàn diện và khoa học cho sản phẩm mới.
+8.  **`ingredient_testing_protocol.md`**: Tạo ra một quy trình thử nghiệm ứng dụng nguyên liệu bài bản, bao gồm checklist chi tiết từ A-Z và cấu trúc của một báo cáo kết quả chuyên nghiệp.
+9.  **`commercial_formula_optimizer.md`**: Tập trung vào việc xây dựng một công thức làm bánh có tính thương mại cao, tối ưu về chi phí, quy trình sản xuất và tính ổn định khi sử dụng nguyên liệu chủ lực của công ty.
 
 ## Chế độ Tối ưu hóa (Optimization Modes)
 
