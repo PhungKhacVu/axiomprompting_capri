@@ -1,6 +1,10 @@
 import os
+import re
 from openai import OpenAI
 from typing import Optional
+
+# Regex for matching double curly brace placeholders: {{key}}
+_PLACEHOLDER_PATTERN = re.compile(r"\{\{(.*?)\}\}", re.DOTALL)
 
 class AceAgent:
     def __init__(self, role_name: str, template_path: str):
@@ -22,11 +26,11 @@ class AceAgent:
         Runs the agent with the given inputs.
         If NO API key is present, returns a mock response for testing.
         """
-        # 1. Fill placeholders in the template
-        prompt = self.template_content
-        for key, value in inputs.items():
-            # Replace double curly braces {{key}} with value
-            prompt = prompt.replace(f"{{{{{key}}}}}", str(value))
+        # 1. Fill placeholders in the template using single-pass replacement
+        prompt = _PLACEHOLDER_PATTERN.sub(
+            lambda m: str(inputs.get(m.group(1), m.group(0))),
+            self.template_content
+        )
 
         # 2. Call LLM or Mock
         if not self.client:
